@@ -7,7 +7,7 @@ This repo is supposed to be my backup for the current neovim config i have.
 If for some reason i lose my config, i can clone it from here.
 
 ---
-## Installing neovim form `source`
+## Installing neovim form source
 This config works best when neovim is installed form source.
 
 Here is how to instal from `source`:
