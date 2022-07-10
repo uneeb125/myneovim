@@ -67,6 +67,16 @@ keymap("v", "p", '"_dP', opts)
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 
+-- Move to Start and End of the line
+keymap("i", "<A-;>", "<Home>", opts)
+keymap("i", "<A-'>", "<End>", opts)
+
+
+-- Move to Start and End of the file
+keymap("i", "<A-,>", "gg", opts)
+keymap("i", "<A-.>", "<S-g>", opts)
+
+
 -- Visual --
 -- Stay in indent mode
 keymap("v", "<", "<gv", opts)
