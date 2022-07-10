@@ -32,6 +32,18 @@ keymap("n", "<C-Right>", ":vertical resize +2<CR>", opts)
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
+-- Map Mark to .
+keymap("n", "\\", "'", opts)
+
+-- Move to Start and End of the line
+keymap("n", ";", "0", opts)
+keymap("n", "'", "$", opts)
+
+
+-- Move to Start and End of the file
+keymap("n", ",", "gg", opts)
+keymap("n", ".", "<S-g>", opts)
+
 -- Clear highlights
 keymap("n", "<leader>h", "<cmd>nohlsearch<CR>", opts)
 
@@ -45,7 +57,7 @@ keymap("n", "<S-w>","<cmd>w!<CR>", opts)
 keymap("n", "<C-s>", "<cmd>wa!<CR>", opts)
 
 -- Save, Compile and Run current
-keymap("n","<A-;>", ':w!<CR>:TermExec cmd="gcc %:p -o %:p:r && %:p:h/./%:p:t:r"<CR>"', opts)
+keymap("n","<A-;>", ':w!<CR>:TermExec cmd="gcc %:p -o %:p:r && %:p:h/./%:p:t:r""', opts)
 
 -- Better paste
 keymap("v", "p", '"_dP', opts)
