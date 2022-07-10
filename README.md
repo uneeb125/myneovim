@@ -1,7 +1,9 @@
 # myneovim
-> Why does this exist?
+> Why is this repo?
 
-This repo is supposed to be my backup for the current neovim config i have.
+This repo is supposed to be my backup for the current neovim config i have. This config is stricktly for me and the following steps are made for me so that i can ensure my config does not break when i try to clone it from here to my local machine.
+
+This repo is just my personalized version of [nvim-basic-ide](https://github.com/LunarVim/nvim-basic-ide) by [ChristianChiarulli](https://github.com/ChristianChiarulli) (awesome guy by the way). 
 
 # How to install?
 If for some reason i lose my config, i can clone it from here.
@@ -10,7 +12,7 @@ If for some reason i lose my config, i can clone it from here.
 ## Installing neovim form source
 This config works best when neovim is installed form source.
 
-Here is how to instal from `source`:
+Here is how to install from `source`:
 
 ```sh
 git clone https://github.com/neovim/neovim.git
@@ -25,7 +27,7 @@ sudo make install
 Make sure to remove or move your current `nvim` directory
 
 ```sh
-git clone git@github.com:uneeb125/myneovim.git ~/.config/nvim
+git clone git@github.com:FarrukhKamal48/nvimCONF.git ~/.config/nvim
 ```
 
 Run `nvim ~/.config/nvim/lua/user/plugins.lua` and wait for the plugins to be installed
@@ -47,7 +49,7 @@ Open `nvim` and enter the following:
 :checkhealth
 ```
 
-You'll probably notice you don't have support for copy/paste also that python and node haven't been setup
+You'll probably notice you don't have support for copy/paste also that `python` and `node` haven't been setup
 
 So let's fix that
 
@@ -56,15 +58,15 @@ First we'll fix copy/paste
   sudo pacman -Sy xsel
   ```
 
-Next we need to install python support (node is optional)
+Next we need to install `python` support (node is optional)
 
-- Neovim python support
+- Neovim `python` support
 
   ```sh
   pip install pynvim
   ```
 
-- Neovim node support
+- Neovim `node` support
 
   ```sh
   npm i -g neovim
@@ -78,7 +80,7 @@ We will also need `ripgrep` for Telescope to work:
   sudo apt install ripgrep
   ```
 
-Fix null-ls
+Fix `null-ls`
 
 - Prettier
   
@@ -124,10 +126,10 @@ Next you will need to add the server to this list: [servers](https://github.com/
 
 ### Formatters and linters
 
-Make sure the formatter or linter is installed and add it to this setup function: [null-ls](https://github.com/LunarVim/nvim-basic-ide/blob/8b9ec3bffe8c8577042baf07c75408532a733fea/lua/user/lsp/null-ls.lua#L13)
+Make sure the formatter or linter is installed and add it to this setup function: [null-ls](https://github.com/uneeb125/myneovim/blob/main/lua/user/lsp/null-ls.lua#L13)
 
 **NOTE** Some are already setup as examples, remove them if you want
 
 ### Plugins
 
-You can install new plugins here: [plugins](https://github.com/LunarVim/nvim-basic-ide/blob/8b9ec3bffe8c8577042baf07c75408532a733fea/lua/user/plugins.lua#L42)
+You can install new plugins here: [plugins](https://github.com/uneeb125/myneovim/blob/main/lua/user/plugins.lua#L42)
