@@ -149,6 +149,11 @@ _G.packer_plugins = {
     path = "/home/uneeb/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
   },
+  molokai = {
+    loaded = true,
+    path = "/home/uneeb/.local/share/nvim/site/pack/packer/start/molokai",
+    url = "https://github.com/tomasr/molokai"
+  },
   ["null-ls.nvim"] = {
     loaded = true,
     path = "/home/uneeb/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
@@ -203,6 +208,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/uneeb/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
+  },
+  ["onedark.nvim"] = {
+    loaded = true,
+    path = "/home/uneeb/.local/share/nvim/site/pack/packer/start/onedark.nvim",
+    url = "https://github.com/navarasu/onedark.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,

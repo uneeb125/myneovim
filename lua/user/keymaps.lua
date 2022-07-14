@@ -63,6 +63,10 @@ keymap("n","<A-;>", ':w!<CR>:TermExec cmd="gcc %:p -o %:p:r && %:p:h/./%:p:t:r""
 keymap("v", "p", '"_dP', opts)
 
 -- Insert --
+
+-- Undo in insert_mode
+keymap("i", "<C-z>", "<cmd>undo<CR>")
+
 -- Press jk fast to enter
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
