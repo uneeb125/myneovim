@@ -39,6 +39,10 @@ keymap("n", "\\", "'", opts)
 keymap("n", ";", "0", opts)
 keymap("n", "'", "$", opts)
 
+-- Move up and down fast
+keymap("n", "<S-k>", "6k", opts)
+keymap("n", "<S-j>", "6j", opts)
+
 
 -- Move to Start and End of the file
 keymap("n", ",", "gg", opts)
