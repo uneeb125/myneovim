@@ -23,7 +23,8 @@ require('onedark').setup  {
 
     -- Custom Highlights --
     colors = {
-        varred = "#F65866"
+        varred = "#F65866",
+        black = "#156BDC",
     }, -- Override default colors
     highlights = {
         TSVariable = {fg = '$varred'},
@@ -33,6 +34,6 @@ require('onedark').setup  {
     diagnostics = {
         darker = true, -- darker colors for diagnostic
         undercurl = true,   -- use undercurl instead of underline for diagnostics
-        background = true,    -- use background color for virtual text
+        background = false,    -- use background color for virtual text
     },
 }

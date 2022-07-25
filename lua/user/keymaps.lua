@@ -61,7 +61,15 @@ keymap("n", "<S-w>","<cmd>w!<CR>", opts)
 keymap("n", "<C-s>", "<cmd>wa!<CR>", opts)
 
 -- Save, Compile and Run current
-keymap("n","<A-;>", ':w!<CR>:TermExec cmd="gcc %:p -o %:p:r && %:p:h/./%:p:t:r""', opts)
+if (vim.fn.expand('%:e')==('c'))
+then
+keymap("n","<A-;>", ':w!<CR>:TermExec cmd="gcc %:p -o %:p:r && clear && %:p:h/./%:p:t:r"<CR>:ToggleTerm<CR>:ToggleTerm<CR>', opts)
+end
+
+if (vim.fn.expand('%:e')=='cpp')
+then
+keymap("n","<A-;>", ':w!<CR>:TermExec cmd="g++ %:p -o %:p:r && clear && %:p:h/./%:p:t:r"<CR>:ToggleTerm<CR>:ToggleTerm<CR>', opts)
+end
 
 -- Better paste
 keymap("v", "p", '"_dP', opts)
